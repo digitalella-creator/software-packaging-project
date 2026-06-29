@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "software-packaging-project"
+version = "1.0.0"
+description = "Software Packaging Project using Flask"
+authors = [
+    { name = "Emmanuela" }
+]
+dependencies = [
+    "Flask",
+    "requests"
+]
+
+[tool.setuptools]
+py-modules = [
+    "app",
+    "config",
+    "config_dev",
+    "config_stage"
+]
